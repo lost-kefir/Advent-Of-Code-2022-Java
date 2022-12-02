@@ -10,7 +10,9 @@
 
 ## General info
 This is simple Java project where I solve puzzles from Advent Of Code calendar.
-Puzzle from each day is available in adventcode package.
+Puzzle from each day is available in test package, solution code is being placed in main java packages.
+
+Enjoy!
 
 ## Technologies
 Project is being created with:
