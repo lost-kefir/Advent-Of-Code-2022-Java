@@ -14,6 +14,10 @@ Puzzle from each day is available in test package, solution code is being placed
 
 Enjoy!
 
+> **_NOTE:_**  If you are searching for algorithmic solutions, 
+> then this repository is not what you looking for.
+> I use this as learning project for various data types, streams and lib's.
+
 ## Technologies
 Project is being created with:
 * Java: 17
