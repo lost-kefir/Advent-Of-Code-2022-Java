@@ -55,7 +55,7 @@ public class Day4CampCleanupTest {
     public void checkAssignmentPairMapping() {
         var range = "1-9,10-100";
         var expectedSmallerRange = IntStream.rangeClosed(1,9).boxed().toList();
-        var expectedLongRange = IntStream.rangeClosed(10,100).boxed().toList();;
+        var expectedLongRange = IntStream.rangeClosed(10,100).boxed().toList();
         var assignmentPair = organizer.makeAssignmentPair(range);
 
         assertEquals(expectedSmallerRange, assignmentPair.getLeft());
@@ -69,7 +69,7 @@ public class Day4CampCleanupTest {
                 .format("Range should be between lower and upper limits on a scale: %d - %d", 9, 1);
         Exception exception = assertThrows(IllegalArgumentException.class,
                 () -> organizer.makeAssignmentPair(range));
-        assertEquals(msg, exception.getMessage());;
+        assertEquals(msg, exception.getMessage());
     }
 
     @Test
@@ -79,6 +79,6 @@ public class Day4CampCleanupTest {
                 .format("Range should be between lower and upper limits on a scale: %d - %d", 0, 1);
         Exception exception = assertThrows(IllegalArgumentException.class,
                 () -> organizer.makeAssignmentPair(range));
-        assertEquals(msg, exception.getMessage());;
+        assertEquals(msg, exception.getMessage());
     }
 }
