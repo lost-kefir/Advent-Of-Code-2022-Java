@@ -1,5 +1,8 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'com.palantir.graal' version '0.12.0'
+    id 'org.graalvm.buildtools.native' version '0.9.19'
 }
 
 group 'org.example'
@@ -7,6 +10,7 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
 }
 
 dependencies {
@@ -22,8 +26,29 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
     implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
+    implementation group: 'info.picocli', name: 'picocli', version: '4.7.0'
+    annotationProcessor 'info.picocli:picocli-codegen:4.7.0'
+}
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    options.compilerArgs += ["-Aproject=${project.name}"]
+}
+
+application {
+    mainClassName = 'CommandApp'
+}
+
+graal {
+    mainClass 'CommandApp'
+    outputName 'aoc22'
+    graalVersion '21.3.3.1'
+    javaVersion '17'
 }
 
 test {
     useJUnitPlatform()
 }
+
+nativeImage.dependsOn build
