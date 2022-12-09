@@ -1,3 +1,6 @@
+import adventcode.day5.Crane;
+import adventcode.day5.CrateMover9000;
+import adventcode.day5.CrateMover9001;
 import adventcode.day5.SupplyStacks;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -17,7 +20,8 @@ public class Day5SupplyStacksTest {
     @Test //After the rearrangement procedure completes, what crate ends up on top of each stack?
     public void checkNumberOfPairsWithRangeFullyOverlaps() {
         var expectedResult = "CMZ";
-        organizer.moveCratesByProcedure();
+        Crane crateMover9000 = new CrateMover9000();
+        organizer.moveCratesByProcedure(crateMover9000);
         var result = organizer.getTopCrates();
 
         log.debug("Crates that ends up on top of each stack are: {}",
@@ -28,7 +32,8 @@ public class Day5SupplyStacksTest {
     @Test //After the rearrangement procedure completes, what crate ends up on top of each stack?
     public void craneV2() {
         var expectedResult = "MCD";
-        organizer.moveCratesByProcedureV2();
+        Crane crateMover9001 = new CrateMover9001();
+        organizer.moveCratesByProcedure(crateMover9001);
         var result = organizer.getTopCrates();
         log.debug("Crates that ends up on top of each stack are: {}",
                 result);

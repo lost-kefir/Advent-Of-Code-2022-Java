@@ -2,6 +2,7 @@ package adventcode.day5;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -13,17 +14,24 @@ import java.util.regex.Pattern;
 @Getter
 class DrawingParser {
     private final List<Procedure> procedures;
-    private final String stacks;
+    private final List<String> stacks;
+    private final int maxNumberOfCrates;
     private final static Pattern drawingDivide = Pattern.compile("(?m)^\\s*$"); // will divide drawing to crates stack and procedures
     private final static Pattern crateMarker = Pattern.compile("\\[[^\\[]*]");
 
     protected DrawingParser(String drawing) {
         String[] sections = drawing.split(drawingDivide.pattern());
-        this.stacks = getStackMatrix(sections[0]);
+        String stackMatrix = getStackMatrix(sections[0]);
+        this.stacks = stackMatrix.lines().toList();
+        this.maxNumberOfCrates = extractCratesFromStack(stacks, 0).size();
         this.procedures = getProcedureFromDrawing(drawing);
-//        this.procedures = sections[1].trim();
         log.debug("Formatted Stacks:\n{}", stacks);
         log.debug("Procedures:\n{}", procedures);
+    }
+
+    protected List<String> extractCratesFromStack(List<String> stacks, int stackNumber) {
+        return Arrays.stream(stacks.get(stackNumber).replaceAll("[\\[\\]]", "").split(StringUtils.SPACE))
+                .toList();
     }
 
     private String getStackMatrix(String stacksDrawing) {
