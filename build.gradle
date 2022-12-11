@@ -26,8 +26,11 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
     implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
-    implementation group: 'info.picocli', name: 'picocli', version: '4.7.0'
-    annotationProcessor 'info.picocli:picocli-codegen:4.7.0'
+//    implementation group: 'info.picocli', name: 'picocli', version: '4.7.0'
+//    annotationProcessor 'info.picocli:picocli-codegen:4.7.0'
+    implementation group: 'com.googlecode.clichemaven', name: 'cliche', version: '110413'
+//    implementation group: 'com.googlecode.cliche', name: 'cliche', version: '1.0'
+
 }
 
 compileJava {
