@@ -1,4 +1,4 @@
-package adventcode.day4;
+package adventcode.day04;
 
 import lombok.Getter;
 import lombok.NonNull;

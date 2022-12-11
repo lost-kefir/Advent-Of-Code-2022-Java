@@ -1,4 +1,4 @@
-package adventcode.day2.model;
+package adventcode.day02.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

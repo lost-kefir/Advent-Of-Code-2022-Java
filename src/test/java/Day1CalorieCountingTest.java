@@ -1,4 +1,4 @@
-import adventcode.day1.CalorieCounting;
+import adventcode.day01.CalorieCounting;
 import org.junit.jupiter.api.Test;
 import reader.TestInputReader;
 

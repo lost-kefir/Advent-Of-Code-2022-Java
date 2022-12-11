@@ -1,4 +1,4 @@
-package adventcode.day3;
+package adventcode.day03;
 
 import com.google.common.primitives.Chars;
 import lombok.AccessLevel;

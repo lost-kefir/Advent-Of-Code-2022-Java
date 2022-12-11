@@ -1,11 +1,9 @@
-import adventcode.day3.RucksackReorganization;
+import adventcode.day03.RucksackReorganization;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import reader.TestInputReader;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

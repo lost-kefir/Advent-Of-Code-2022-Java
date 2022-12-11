@@ -1,4 +1,4 @@
-package adventcode.day3;
+package adventcode.day03;
 
 import org.apache.commons.lang3.ArrayUtils;
 
