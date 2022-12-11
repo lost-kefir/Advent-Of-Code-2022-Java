@@ -1,4 +1,4 @@
-package adventcode.day7;
+package adventcode.day07;
 
 import lombok.extern.slf4j.Slf4j;
 import reader.TestInputReader;

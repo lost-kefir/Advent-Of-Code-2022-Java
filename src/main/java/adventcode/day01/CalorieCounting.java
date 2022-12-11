@@ -1,4 +1,4 @@
-package adventcode.day1;
+package adventcode.day01;
 
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

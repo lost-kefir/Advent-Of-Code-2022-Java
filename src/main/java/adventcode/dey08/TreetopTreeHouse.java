@@ -1,4 +1,4 @@
-package adventcode.dey8;
+package adventcode.dey08;
 
 import lombok.extern.slf4j.Slf4j;
 import reader.TestInputReader;

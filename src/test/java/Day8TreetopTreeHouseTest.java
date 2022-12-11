@@ -1,5 +1,4 @@
-import adventcode.day7.FileSystem;
-import adventcode.dey8.TreetopTreeHouse;
+import adventcode.dey08.TreetopTreeHouse;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 

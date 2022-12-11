@@ -1,4 +1,4 @@
-package adventcode.day5;
+package adventcode.day05;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

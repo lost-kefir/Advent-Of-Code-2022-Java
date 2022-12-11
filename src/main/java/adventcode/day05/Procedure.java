@@ -1,4 +1,4 @@
-package adventcode.day5;
+package adventcode.day05;
 
 import lombok.AccessLevel;
 import lombok.Getter;

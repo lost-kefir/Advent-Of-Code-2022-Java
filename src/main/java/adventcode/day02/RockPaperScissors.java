@@ -1,7 +1,7 @@
-package adventcode.day2;
+package adventcode.day02;
 
-import adventcode.day2.model.Move;
-import adventcode.day2.model.Result;
+import adventcode.day02.model.Move;
+import adventcode.day02.model.Result;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

@@ -1,11 +1,8 @@
-import adventcode.day2.RockPaperScissors;
+import adventcode.day02.RockPaperScissors;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import reader.TestInputReader;
-
-import java.util.Collections;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

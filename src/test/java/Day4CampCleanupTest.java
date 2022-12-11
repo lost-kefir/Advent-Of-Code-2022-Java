@@ -1,4 +1,4 @@
-import adventcode.day4.CampCleanup;
+import adventcode.day04.CampCleanup;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
